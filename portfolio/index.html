@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cindy's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Cindy</h1>
+      <p class="text-lg">Software Engineer | Java Developer</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-12">
+    <h2 class="text-2xl font-bold mb-4">About Me</h2>
+    <div class="flex flex-col md:flex-row items-center">
+      <img src="images/profile photo.jpg" alt="Cindy" class="w-28 h-28 rounded-full mb-2 md:mb-0 md:mr-3">
+      <p style="color: #000"class="leading-loose">I am a software engineer with 1 year of experience in Java development. I am passionate about coding and love solving complex problems. I enjoy working on projects that challenge me and allow me to grow my skill set. In addition to Java, I have experience with Spring Framework, JavaScript, and MySQL.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-white py-12">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Skills</h2>
+      <ul class="list-disc list-inside">
+        <li>Web Application Development</li>
+        <li>Software Debugging</li>
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-12">
+    <h2 class="text-2xl font-bold mb-4">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-white p-4 shadow">
+        <h3 class="text-xl font-bold">Project One</h3>
+        <img src="images/IOT.jpeg" alt="Project One" class="w-full h-48 object-cover mb-4">
+        <p class="leading-loose"><h4 class="text-2xl font-bold mb-4">Description of IOT Project</h4><br>This project introduces a robotic system for monitoring family activities and health using an ARM cortex processor. Real-time video monitoring with H264 coding is enabled through 802.11 g, TCP/IP, and HTTP. The system employs C/S and B/S architectures, a database server, and SSH protocol for remote control and safety, with successful experimental results demonstrating its monitoring capabilities.</br></p>
+      </div>
+      <div class="bg-white p-4 shadow">
+        <h3 class="text-xl font-bold">Project Two</h3>
+        <img src="images/Metaverse.jpeg" alt="Project Two" class="w-full h-48 object-cover mb-4">
+        <p class="leading-loose"><h5 class="text-2xl font-bold mb-4">Description of Metaverse project</h5><br>This project involved a virtual environment that combines aspects of the real world with existing technologies like augmented reality (AR), virtual reality (VR), and digital currency. It's a spatial computing platform that offers digital experiences and is designed to be more immersive than the internet. The metaverse can include virtual workplaces, dressing rooms, operating rooms, and online video games.</br></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Resume</h2>
+      <a href="resume.pdf" download class="bg-blue-600 text-white px-4 py-2"><button class="btn btn-primary"> download Resume (PDF)</button></a>
+      <script src="pdf.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-12">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <form id="contact-form" class="space-y-4">
+        <div>
+          <label for="name" class="block">Name</label>
+          <input type="text" id="name" class="w-full border border-gray-300 p-2" required>
+        </div>
+        <div>
+          <label for="email" class="block">Email</label>
+          <input type="email" id="email" class="w-full border border-gray-300 p-2" required>
+        </div>
+        <div>
+          <label for="message" class="block">Message</label>
+          <textarea id="message" class="w-full border border-gray-300 p-2" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2">Send</button>
+      </form>
+      <div class="mt-8">
+        <p>Email: Cindy248@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Cindy</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  
+</body>
+</html>

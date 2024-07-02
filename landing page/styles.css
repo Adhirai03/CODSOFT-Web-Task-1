@@ -1,0 +1,168 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 10px 0;
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 14px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e52e71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.media-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.media-icon a{
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition:0.3s;
+    transition-property:transform;
+}
+
+.media-icons a:not(:last-child){
+    margin-bottom: 60px;
+
+}
+
+.media-icons a:hover{
+    transform:scale(1.5);
+}
+
+
+.services, .about, .features, .testimonials, .contact {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.service, .feature, .testimonial {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(163, 110, 53, 0.8); /* Semi-transparent background */
+    display: inline-block;
+    width: 28%;
+}
+
+.feature input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.about{
+    text-align: center;
+    padding: 50px 10px;
+    background: url('images/about.jpeg') no-repeat center center/cover;
+    color: white;
+}
+
+.about button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+
+.testimonials .testimonial {
+    width: 30%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    margin: 10px 0 5px;
+}
+
+.contact form input, .contact form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #e52e71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
